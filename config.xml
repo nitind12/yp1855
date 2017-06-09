@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="yp1855.pioneer.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>YP1855</name>
+    <description>
+        Pioneer Yield Production Calculator for 1855
+    </description>
+    <author email="rahul.mathur@pioneer.com" href="http://teamfreelancers.com">
+        Pioneer team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Pioneer Production Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/mystyle.css">
+    </head>
+    <body style="background: #9b261f;">
+    	<header>
+    		<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">Pioneer Production Calculator</a>
+			    </div>
+			    <!--ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Home</a></li>
+			      <li><a href="#">Page 1</a></li>
+			      <li><a href="#">Page 2</a></li>
+			      <li><a href="#">Page 3</a></li>
+			    </ul-->
+			  </div>
+			</nav>
+    	</header>
+    	<section>
+    		<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-6 col-xs-6 col-md-6">
+							<img src="img/fortyYears.png" width="60%" />
+						</div>
+						<div class="col-sm-6 col-xs-6 col-md-6" style="text-align: right; padding: 10px 0px 0px 0px">
+							<img src="img/pioneer_logo.jpg" width="60%" />
+						</div>
+					</div>
+					<div class="col-sm-12" style="padding: 5px">
+					</div>
+					<div class="col-sm-12">	
+						<table class="table borderless">
+							<thead>
+								<tr>
+									<td colspan="4" align="center">
+										<img src="img/pioneer_text.jpg" width="90%" />
+									</td>
+								</tr>
+							</thead>
+							<thead>
+								<tr style="background: #fdc800; color: #000000; border:#9b261f solid 1px">
+									<th class="border-dark">क्र0</th>
+									<th class="border-dark">विवरण</th>
+									<th class="border-dark">P1855<br /><span style="font-size:10px; font-weight: bold">(किसान विधि)</span></th>
+									<th class="border-dark"><span style="font-size:13px; font-weight: bold">अन्य  मक्का</span><br /><span style="font-size:10px; font-weight: bold">(किसान विधि)</span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="4" style="padding: 1px"></td>
+								</tr>
+								<tr>
+									<td class="border-light">A</td>
+									<td class="border-light">कटाई क्षेत्र की लम्बाई (मीटर)</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_A" id="txtP_A" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_A" id="txtO_A" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">B</td>
+									<td class="border-light">कटाई गयी लाइनों की संख्या</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_B" id="txtP_B" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_B" id="txtO_B" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">C</td>
+									<td class="border-light">कटाई क्षेत्र में दानों का वज़न (किलो)</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_C" id="txtP_C" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_C" id="txtO_C" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">&nbsp;</td>
+									<td class="border-light">Actual Moisture</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_Moisture" id="txtP_Moisture" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_Moisture" id="txtO_Moisture" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">D</td>
+									<td class="border-light">
+										अतिरिक्त नमी की मात्रा (%) <br />
+										<span style="color:#ffff00">(Actual Moisture - 14)</span>
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_D" id="txtP_D" readonly class="disabledinput" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_D" id="txtO_D" readonly class="disabledinput" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">E</td>
+									<td class="border-light">
+										कटाई क्षेत्र में कुल सूखे दानों का वज़न (किलो)<br />
+										<span style="color:#ffff00">(C-(C x D)/100)</span>
+									</td class="border-light">
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_E" id="txtP_E" readonly class="disabledinput" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_E" id="txtO_E" readonly class="disabledinput" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">F</td>
+									<td class="border-light">
+										प्रति वर्ग मीटर कुल पैदावार (किलो)<br />
+										<span style="color:#ffff00">E/ कटाई किया गया क्षेत्रफल</span>
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_F" id="txtP_F" readonly class="disabledinput" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_F" id="txtO_F" readonly class="disabledinput" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">G</td>
+									<td class="border-light">
+										प्रति एकड़ कुल पैदावार (किलो)<br />
+										<span style="color:#ffff00">F x 4046</span>
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">पायनियर मक्का</span><br />
+										<input type="text" size="4" name="txtP_E" id="txtP_G" disabled="disabled" class="disabledinput" />
+									</td>
+									<td class="border-light">
+										<span style="font-size:10px">अन्य  मक्का</span><br />
+										<input type="text" size="4" name="txtO_E" id="txtO_G" disabled="disabled" class="disabledinput" />
+									</td>
+								</tr>
+								<tr>
+									<td class="border-light">H</td>
+									<td class="border-light">
+										कुल उपज में अंतर (किलो)<br />
+										<span style="color:#ffff00">(कुल पायनियर मक्का उपज - कुल अन्य मक्का उपज)</span>
+									</td>
+									<td  class="border-light tot_diff" id="total_difference" colspan="2"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm-12">
+						<img src="img/base.png" width="100%" />
+					</div>
+					<div class="col-sm-12" style="font-size: 50%; padding: 10px;">
+						<div class="col-sm-8 col-xs-8 col-md-8" style="font-size: 50%;">
+						&reg, SM, TM Trademarks and service marks of DuPont, Pioneer or their respective owners. &copy 2017 PHI.
+						</div>
+						<div class="col-sm-4 col-xs-4 col-md-4" style="font-size: 50%; text-align: right">
+							www.pioneer.com/india
+						</div>
+					</div>
+				</div>
+			</div>
+    	</section>
+    	<footer>
+    		
+    	</footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/myjs.js?version=1.5"></script>
+    </body>
+</html>

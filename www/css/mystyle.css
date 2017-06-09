@@ -1,0 +1,29 @@
+@font-face {  
+    font-family: kruti dev ;  
+    src: url( '../hindi/k010.TTF' ) format("truetype");  
+}
+
+body{
+	color: #ffffff;
+}
+input{
+	color: #000090;
+	font-weight: bold;
+}
+.disabledinput{
+	background:#900000; 
+	color: #ffff00;
+	border: none;
+}
+.border-light{
+	border:#f0f0f0 solid 1px
+}
+.border-dark{
+	border:#111111 solid 1px
+}
+.tot_diff{
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
